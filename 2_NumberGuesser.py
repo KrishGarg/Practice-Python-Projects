@@ -51,6 +51,10 @@ for i in range(tries):
     # Clearing the terminal after each guess.
     clear()
     
+    # Displays the score
+    sc = f"Score: {score}"
+    print(sc.rjust(os.get_terminal_size().columns-1))
+    
     # Taking the guess from the user.
     try:
         guess = int(input("Enter a guess: "))
